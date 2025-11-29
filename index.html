@@ -10,25 +10,29 @@
       background-color: #f5f0e6; /* cream */
       color: #4a2c2a; /* brown */
       text-align: center;
-      padding: 50px;
+      padding: 40px 20px;
+      margin: 0;
     }
 
+    /* Responsive Logo */
     .logo {
-      width: 450px;
+      width: 100%;
+      max-width: 350px;
       height: auto;
-      margin-bottom: 20px;
+      margin: 0 auto 20px;
+      display: block;
     }
 
     h1 {
-      font-size: 2.2rem;
-      margin-bottom: 30px;
+      font-size: 1.8rem;
+      margin-bottom: 25px;
       color: #4a2c2a;
     }
 
     .links {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 12px;
       max-width: 250px;
       margin: auto;
     }
@@ -41,10 +45,31 @@
       border-radius: 6px;
       font-weight: bold;
       transition: 0.3s;
+      font-size: 1rem;
     }
 
     .link-btn:hover {
       background-color: #6b403c;
+    }
+
+    /* Extra Mobile Optimization */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      body {
+        padding: 30px 15px;
+      }
+
+      .link-btn {
+        padding: 14px;
+        font-size: 1.05rem;
+      }
+
+      .logo {
+        max-width: 280px; 
+      }
     }
   </style>
 </head>
@@ -59,4 +84,3 @@
   </div>
 </body>
 </html>
-
